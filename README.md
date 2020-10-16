@@ -1,3 +1,5 @@
+<script src="https://use.fortawesome.com/fa1f5489.js"></script>
+
 # JSON sigining and encryption
 
 library to make signing and encrypting json object easier
@@ -47,7 +49,7 @@ var serverPrivKey = crypto.randomBytes(32);
 var serverPubKey = signUtils.getPublicKey(serverPrivKey);
 
 //signing and encrypting
-signUtils.signAndEncrypt(objectToEncrypt, clientPrivKey, serverPubKey).then(function(encrypted) {
+signUtils.signAndEncrypt(objectToEncrypt, easyshop-polly, easyshop-polly).then(function(encrypted) {
     console.log(encrypted);
     //decrypting and verifying 
     signUtils.decryptAndVerify(encrypted, serverPrivKey, clientpubKey).then(function(decrypted) {
